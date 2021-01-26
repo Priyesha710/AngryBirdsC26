@@ -40,7 +40,7 @@ function setup() {
   userEngine = Engine.create();
   userWorld = userEngine.world;
   ground = new Ground(600, height-20, 1200, 10);
-
+  platform = new Ground(100,300,300,50);
   bird = new Bird(100,100);
 
   box1 = new Box(700, 320, 70, 70);
@@ -68,7 +68,7 @@ function draw() {
   Engine.update(userEngine);
 
   ground.display();
-
+  platform.display();
   bird.display();
 
   box1.display();
